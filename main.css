@@ -1,0 +1,120 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+
+.hiding{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.login-box{
+    display: flex;
+}
+.error{
+    color: #bb4545;
+}
+
+
+
+.login-container{
+    background-color: #181e23;
+    color: white;
+    padding: 20px;
+
+}
+.login-container hr{
+    color: #8d8d8d;
+}
+.login-container h1{
+    text-align: center;
+    font-size: 70px;
+}
+.login-container div {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.login-container .input-wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 818px;
+    height: 300px;
+}
+.login-container .input-container{
+    position: relative;
+    margin-top: 40px;
+}
+.login-container input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 400px;
+}
+
+.login-container #inputCheckbox{
+    width: 20px;
+}
+.login-container label{
+    position: absolute;
+    pointer-events: none;
+    letter-spacing: 7px;
+    color: white;
+    top: 10px;
+    left: 25px;
+    transition:  .5s;
+}
+.login-container #button{
+    border: 3px solid white;
+    margin-top: 20px;
+
+    transition: .5s;
+    cursor: pointer;
+}
+.login-container #button:hover{
+    border: 1px solid #8d8d8d;
+}
+.login-container .sing-up{
+    text-align: end;
+    color: #8d8d8d;
+    margin-top: 20px;
+
+    transition: .5s;
+    cursor: pointer;
+}
+.login-container .sing-up:hover {
+    color: #bebebe;
+    font-size: 19px;
+}
+.login-container .input-container input:focus ~ label{
+    top: -20px;
+    letter-spacing: 2px;
+    color: #727272;
+    left: 10px;
+ }
+.login-container .input-container input:focus{
+    border-bottom: 2px solid #7979b0;
+}
+
+
+
+
+
+.login-box .flyover-photo{
+    background: url("img/flover.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 30px;
+    width: 500px;
+    height: 500px;
+}

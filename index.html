@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <header class="login-container">
+
+
+      <div class="login-box">
+
+          <div class="flyover-photo"></div>
+
+          <form action="" method="post">
+              <h1>login</h1>
+              <hr>
+              <div id="wrap">
+              <div class="input-container hiding">
+                  <input type="text" name="імя">
+                  <label>first name</label>
+              </div>
+              <div class="input-container hiding">
+                  <input type="text" name="прізвище">
+                  <label>last name</label>
+              </div>
+              <div class="input-container">
+                  <input type="email" name="емаіл" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+                  <label>email</label>
+              </div>
+              <div class="input-container">
+                  <input type="password" name="пароль">
+                  <label>Password</label>
+              </div>
+              <div class="input-container hiding">
+                  <input type="password" name="повтор пароля" required>
+                  <label>repeat the password</label>
+              </div>
+
+              <div class="button-container">
+                  <input id="button" type="submit" value="Войти">
+                  <div class="sing-up">sing up</div>
+
+              </div>
+              </div>
+
+          </form>
+
+      </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
